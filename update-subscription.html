@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="noindex" />
+    <title>BioDigital Human: Subscription</title>
+    <!-- Software and models Copyright 2017 BioDigital, New York, NY. All rights reserved. This system is protected by copyright law and international treaties. Unauthorized reproduction, distribution, reverse engineering or sale of the software is strictly prohibited. -->
+    <!-- CSS -->
+    <link href="css/base.css" rel="stylesheet" type="text/css" />
+    <link href="css/assets.css" rel="stylesheet" type="text/css" />
+    <link href="css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="css/modal.css" rel="stylesheet" type="text/css" />
+    <!-- jQuery -->
+
+    <script defer src="lib/jquery/jquery.min.js"></script>
+    <script defer src="lib/jquery/jquery-ui.min.js"></script>
+
+    <script src="lib/require.js"></script>
+
+    <script defer src="scripts/update-subscription.js"></script>
+
+</head>
+<body class="add-medium-margin">
+    <div style="max-width: 500px; margin: 0 auto;">
+
+        <div id="form_notice" class="message hidden">
+            <img id="form_notice_throbber" src="img/loader-white.gif" />
+            <div id="form_notice_msg">
+            </div>
+        </div>
+
+        <div style="overflow-x: hidden;  overflow-y: hidden;">
+            <!-- Braintree Subscription -->
+            <div id="professional_braintree_div">
+
+                <!-- Update Payment info -->
+                <div id="update_payment_info_form_div" class="add-medium-margin clear-both">
+                    <form id="update_payment_info_form" class="form-horizontal">
+                        Specify your new payment method below:<br /><br />
+                        <div id="update_payment_method"></div><br /><br />
+                        <div class="content-actions add-large-margin-bottom align-center">
+                            <div id="update_payment_info_form_no_button" class="btn-as-text">
+                                No, take me back
+                            </div>
+                            <input id="update_payment_info_form_yes_button" type="submit" value="Update" class="btn" />
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
